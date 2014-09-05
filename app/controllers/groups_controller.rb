@@ -1,4 +1,12 @@
 class GroupsController < ApplicationController
+ 
+  def index
+    @groups = Group.all
+    
+    respond_to do |format|
+      format.html
+    end
+  end
 
   def new
     @group = Group.new
