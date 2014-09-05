@@ -4,6 +4,8 @@ Msgapp::Application.routes.draw do
 
   resources :users do
   end
+  resources :groups do
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
