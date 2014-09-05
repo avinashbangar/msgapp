@@ -1,7 +1,7 @@
 class CreateMessage < ActiveRecord::Migration
   def change
     create_table :messages do |t|
-      t.belongs_to :group
+      t.belongs_to :meetup
       t.text :msg
 
       t.timestamps
