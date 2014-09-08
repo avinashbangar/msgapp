@@ -1,0 +1,12 @@
+<p>
+   <b>Name:</b><%= @group.name %>
+</p>
+<p>
+   <b>Description:</b><%= @group.description %>
+</p>
+
+<h2>Messages</h2>
+<%= render @group.messages %>
+
+<h2>Add message: </h2>
+<%= render "messages/form" %>

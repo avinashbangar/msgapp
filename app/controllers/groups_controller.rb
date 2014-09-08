@@ -25,4 +25,11 @@ class GroupsController < ApplicationController
       end
     end
   end
+
+  def show
+    @group = Group.find(params[:id])
+    respond_to do |format|
+      format.html
+    end
+  end
 end

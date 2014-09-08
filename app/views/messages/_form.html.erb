@@ -1,0 +1,8 @@
+<%= form_for([@group, @group.messages.build]) do |f| %>
+  <div class="field">
+    <%= f.text_area :msg %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
